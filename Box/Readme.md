@@ -1,14 +1,6 @@
 # Readme
 
-## OVerview
+## Overview
 
-This is a basic box for the eletronics of the Shapeoko2
-with the PSU for the spindle
-
-
-## TODO
-
-  * Redo with a swarf of 0.2 within inkscape
-  * Redo dimensions
-  * Add vents for air flow
-  * Add gaps for sockets
+This is a list of any parts needed to be cut by the laser
+typically I've modeled them out on solidworks first, then exported to an svg

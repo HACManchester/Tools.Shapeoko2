@@ -5,6 +5,11 @@
 We currently have on loan a shapeoko 2 from Simon <br>
 It appears to be using an arduino uno with a gShield, with the grbl firmware and Nema 17's
 
+There are 2 PSU's in use
+
+  * The first one (the black power brick) powers the fan and arduino / shield / stepper motors
+  * The second one (the silver one in the enclosure) powers the spindle and can be turned on / off using the switch on the back of the box.
+
 ## Spindle
 
 The spindle is a spare one Bob had lying around
@@ -19,15 +24,10 @@ This was originally a PSU used for the laser cutter but which is spare
   * https://endless-sphere.com/forums/viewtopic.php?f=2&t=55658
   * https://endless-sphere.com/w/index.php/S-350-36
 
-## TODO
+## Calibration
 
-  * I think the voltage / current to the steppers needs adjusting, as I think it's too weak / not enough torque
+So far everything seems to be in check.
+I've set the stepper current so that the stepper motors don't get too hot, also the pulley on the X Axis should now be set correctly
 
-  * There needs to be a fan / mount for the g-sheild to cool it down (need to do this before upping the stepper current)
-  * Need to find a 24V fan from somewhere
-
-  * Sort out a box to put everything in, including the PSU for the spindle / control board / mains socket for kettle lead
-  * Look into a 2 core lead for between the spindle and the psu
   * Currently there are no end stops, ideally we want an inductive sensor on Z-Min for milling PCB's
-
-  * We need to try calibrating the machine http://www.shapeoko.com/wiki/index.php/Calibration_and_Squaring_the_Machine
+  * is there any additional steps we could pull from here: http://www.shapeoko.com/wiki/index.php/Calibration_and_Squaring_the_Machine
