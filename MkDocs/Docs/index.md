@@ -4,7 +4,7 @@ This is a series of Docs for the use of the Shapeoko 2 currently within the Hack
 This is currently on loan to us from Simon.
 (Many thanks to Simon for the loan of the shapeoko, and Bob for the spindle PSU)
 
-<a href="../../images/Shapeoko2.jpg"><img src="../../images/Shapeoko2.jpg" height="100%" width="100%" ></a> <br>
+<a href="../images/Shapeoko2.jpg"><img src="../images/Shapeoko2.jpg" height="100%" width="100%" ></a> <br>
 
 
 ## Software
