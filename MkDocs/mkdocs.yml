@@ -1,0 +1,31 @@
+site_name: Hacman - Shapeoko 2
+pages:
+- Home: index.md
+- CNC:
+    - Connecting - USB: CNC/Connecting.md
+    - Jogging / Moving the CNC: CNC/Jog.md
+    - Loading and Setup: CNC/Loading-Setup.md
+    - Simulation: CNC/Simulation.md
+    - Milling Material: CNC/Material.md
+    - Milling: CNC/Milling.md
+- Hsmworks:
+    - Adaptive Clearing: Hsmworks/AdaptClear.md
+    - Feed Rates: Hsmworks/FeedRates.md
+    - Simulation: Hsmworks/Simulation.md
+- Maintenance:
+    - Device Overview: Maintenance/Device-Overview.md
+    - Updating the Firmware: Maintenance/Updating-Firmware.md
+    - Grbl Settings: Maintenance/Grbl-Settings.md
+    - Todo: Maintenance/Todo.md
+
+theme: cosmo
+#theme: alabaster
+#theme: readthedocs
+#theme: mkdocs
+
+markdown_extensions:
+    - smarty
+
+extra_css:
+    - css/highlight-fix.css
+    - css/highlight-custom.css

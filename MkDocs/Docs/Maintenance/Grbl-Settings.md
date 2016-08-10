@@ -1,6 +1,6 @@
 # Grbl Settings
 
-## Original Setttings 0.8c
+## Original Settings 0.8c
 
 These are the settings from the original setup 0.8c
 ```
@@ -29,11 +29,11 @@ $21=100 (homing debounce, msec)
 $22=1.000 (homing pull-off, mm)
 ```
 
-## New Setttings 0.9j
+## New Settings 0.9j
 
 These are the settings for the new updated firmware
 
-  * http://www.shapeoko.com/wiki/index.php/Grbl_Settings
+  * <http://www.shapeoko.com/wiki/index.php/Grbl_Settings>
 
 ```
 $0=10 (step pulse, usec)
@@ -75,7 +75,7 @@ This is a list of changes from the defaults that need to be applied when updatin
 
 ```
 $0=30 (step pulse, usec)
-$1=255 (step idle delay, msec)
+$1=100 (step idle delay, msec)
 $2=252 (step port invert mask:11111100)
 $3=7 (dir port invert mask:00000000)
 $11=0.020 (junction deviation, mm)
@@ -92,7 +92,7 @@ $122=25.000 (z accel, mm/sec^2)
 
 ### Settings unique to this device
 
-First one setting that's different for the g-sheild is the one that inverts the step pins
+First one setting that's different for the g-shield is the one that inverts the step pins
 ```
 $2=252 (step port invert mask:11111100)
 ```
@@ -102,9 +102,15 @@ Next this one inverts the direction of the axis for all 3 axis
 $3=7
 ```
 
+This sets the step idle delay to 0.1 seconds.
+This allows us to move the machine when idle.
+```
+$1=100
+```
+
 ### Micro Stepping
 
-Currently the microstepping jumpers on the board are set to
+Currently the micro stepping jumpers on the board are set to
 
   * 8x for the X / Y Axis (no jumper)
   * 2x for the Z Axis

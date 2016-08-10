@@ -1,15 +1,15 @@
-# Updating Firmware
+# Updating the Firmware
 
 ## Overview
 
-This is a list of steps to follow when updating the grbl firmware
+This is a list of steps to follow when updating the Grbl firmware
 
 ## Backup Settings
 
-The first thing we need to do is backup the settings from the grbl firmware / arduino
+The first thing we need to do is backup the settings from the Grbl firmware / Arduino
 
-  * Open putty and connect to the grbl / arduino Uno
-  * http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+  * Open putty and connect to the Grbl / Arduino Uno
+  * <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>
 
   * Type $$ followed by a carriage return
   * Copy and paste the output into a text file
@@ -18,16 +18,16 @@ The first thing we need to do is backup the settings from the grbl firmware / ar
 
 Next we need to grab the latest firmware version
 
-  * https://github.com/grbl/grbl
+  * <https://github.com/grbl/grbl>
   * Version 0.9j (2016-03-17) seems to be the latest at the time of writing
 
 Next download XLoader
 
-  * http://russemotto.com/xloader/
+  * <http://russemotto.com/xloader/>
 
 ## Flash Firmware
 
-Next to flash the new Hex file to the arduino
+Next to flash the new Hex file to the Arduino
 
   * Reset the Controller board
   * Open XLoader
@@ -41,6 +41,7 @@ Next to flash the new Hex file to the arduino
 
 As a final step we need to restore any custom settings that were originally applied
 
-  * Connect via putty (with the latest firmwares this is now at a speed of 115200)
+  * Connect via putty (with the latest firmware this is now at a speed of 115200)
   * Use $$ to list all settings
   * Add in any differences needed to the settings
+
