@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Grbl Settings - Hacman - Shapeoko 2</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/highlight-fix.css" rel="stylesheet">
+        <link href="../../css/highlight-custom.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Hacman - Shapeoko 2</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">CNC <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../CNC/Connecting/">Connecting - USB</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CNC/Jog/">Jogging / Moving the CNC</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CNC/Loading-Setup/">Loading and Setup</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CNC/Simulation/">Simulation</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CNC/Material/">Milling Material</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CNC/Milling/">Milling</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hsmworks <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../Hsmworks/AdaptClear/">Adaptive Clearing</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../Hsmworks/FeedRates/">Feed Rates</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../Hsmworks/Simulation/">Simulation</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Maintenance <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../Device-Overview/">Device Overview</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Updating-Firmware/">Updating the Firmware</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Grbl Settings</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Todo/">Todo</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../Updating-Firmware/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../Todo/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#grbl-settings">Grbl Settings</a></li>
+        
+            <li><a href="#original-settings-08c">Original Settings 0.8c</a></li>
+        
+            <li><a href="#new-settings-09j">New Settings 0.9j</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="grbl-settings">Grbl Settings</h1>
+<h2 id="original-settings-08c">Original Settings 0.8c</h2>
+<p>These are the settings from the original setup 0.8c</p>
+<pre><code>$0=40.020 (x, step/mm)
+$1=40.020 (y, step/mm)
+$2=320.000 (z, step/mm)
+$3=30 (step pulse, usec)
+$4=500.000 (default feed, mm/min)
+$5=500.000 (default seek, mm/min)
+$6=252 (step port invert mask, int:11111100)
+$7=255 (step idle delay, msec)
+$8=25.000 (acceleration, mm/sec^2)
+$9=0.050 (junction deviation, mm)
+$10=0.100 (arc, mm/segment)
+$11=25 (n-arc correction, int)
+$12=3 (n-decimals, int)
+$13=0 (report inches, bool)
+$14=1 (auto start, bool)
+$15=0 (invert step enable, bool)
+$16=0 (hard limits, bool)
+$17=0 (homing cycle, bool)
+$18=0 (homing dir invert mask, int:00000000)
+$19=25.000 (homing feed, mm/min)
+$20=250.000 (homing seek, mm/min)
+$21=100 (homing debounce, msec)
+$22=1.000 (homing pull-off, mm)
+</code></pre>
+
+<h2 id="new-settings-09j">New Settings 0.9j</h2>
+<p>These are the settings for the new updated firmware</p>
+<ul>
+<li><a href="http://www.shapeoko.com/wiki/index.php/Grbl_Settings">http://www.shapeoko.com/wiki/index.php/Grbl_Settings</a></li>
+</ul>
+<pre><code>$0=10 (step pulse, usec)
+$1=255 (step idle delay, msec)
+$2=252 (step port invert mask:11111100)
+$3=7 (dir port invert mask:00000000)
+$4=0 (step enable invert, bool)
+$5=0 (limit pins invert, bool)
+$6=0 (probe pin invert, bool)
+$10=3 (status report mask:00000011)
+$11=0.020 (junction deviation, mm)
+$12=0.002 (arc tolerance, mm)
+$13=0 (report inches, bool)
+$20=0 (soft limits, bool)
+$21=0 (hard limits, bool)
+$22=0 (homing cycle, bool)
+$23=1 (homing dir invert mask:00000001)
+$24=25.000 (homing feed, mm/min)
+$25=635.000 (homing seek, mm/min)
+$26=100 (homing debounce, msec)
+$27=1.000 (homing pull-off, mm)
+$100=40.020 (x, step/mm)
+$101=40.020 (y, step/mm)
+$102=320.000 (z, step/mm)
+$110=500.000 (x max rate, mm/min)
+$111=500.000 (y max rate, mm/min)
+$112=500.000 (z max rate, mm/min)
+$120=25.000 (x accel, mm/sec^2)
+$121=25.000 (y accel, mm/sec^2)
+$122=25.000 (z accel, mm/sec^2)
+$130=200.000 (x max travel, mm)
+$131=200.000 (y max travel, mm)
+$132=200.000 (z max travel, mm)
+</code></pre>
+
+<h3 id="differences-from-defaults">Differences from Defaults</h3>
+<p>This is a list of changes from the defaults that need to be applied when updating the firmware to 0.9</p>
+<pre><code>$0=30 (step pulse, usec)
+$1=100 (step idle delay, msec)
+$2=252 (step port invert mask:11111100)
+$3=7 (dir port invert mask:00000000)
+$11=0.020 (junction deviation, mm)
+$23=1 (homing dir invert mask:00000001)
+$25=635.000 (homing seek, mm/min)
+$26=100 (homing debounce, msec)
+$100=40.020 (x, step/mm)
+$101=40.020 (y, step/mm)
+$102=320.000 (z, step/mm)
+$120=25.000 (x accel, mm/sec^2)
+$121=25.000 (y accel, mm/sec^2)
+$122=25.000 (z accel, mm/sec^2)
+</code></pre>
+
+<h3 id="settings-unique-to-this-device">Settings unique to this device</h3>
+<p>First one setting that&rsquo;s different for the g-shield is the one that inverts the step pins</p>
+<pre><code>$2=252 (step port invert mask:11111100)
+</code></pre>
+
+<p>Next this one inverts the direction of the axis for all 3 axis</p>
+<pre><code>$3=7
+</code></pre>
+
+<p>This sets the step idle delay to 0.1 seconds.
+This allows us to move the machine when idle.</p>
+<pre><code>$1=100
+</code></pre>
+
+<h3 id="micro-stepping">Micro Stepping</h3>
+<p>Currently the micro stepping jumpers on the board are set to</p>
+<ul>
+<li>8x for the X / Y Axis (no jumper)</li>
+<li>2x for the Z Axis</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
