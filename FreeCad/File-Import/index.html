@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Loading and Setup - Hacman - Shapeoko 2</title>
+	<title>File Importing - Hacman - Shapeoko 2</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -58,43 +58,43 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">CNC <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
 <li >
-    <a href="../Connecting/">Connecting - USB</a>
+    <a href="../../CNC/Connecting/">Connecting - USB</a>
 </li>
 
                     
                         
 <li >
-    <a href="../Jog/">Jogging / Moving the CNC</a>
-</li>
-
-                    
-                        
-<li class="active">
-    <a href="./">Loading and Setup</a>
+    <a href="../../CNC/Jog/">Jogging / Moving the CNC</a>
 </li>
 
                     
                         
 <li >
-    <a href="../Simulation/">Simulation</a>
+    <a href="../../CNC/Loading-Setup/">Loading and Setup</a>
 </li>
 
                     
                         
 <li >
-    <a href="../Material/">Milling Material</a>
+    <a href="../../CNC/Simulation/">Simulation</a>
 </li>
 
                     
                         
 <li >
-    <a href="../Milling/">Milling</a>
+    <a href="../../CNC/Material/">Milling Material</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CNC/Milling/">Milling</a>
 </li>
 
                     
@@ -103,13 +103,13 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">FreeCAD <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
-<li >
-    <a href="../../FreeCad/File-Import/">File Importing</a>
+<li class="active">
+    <a href="./">File Importing</a>
 </li>
 
                     
@@ -187,12 +187,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../Jog/">
+                    <a rel="next" href="../../CNC/Milling/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../Simulation/">
+                    <a rel="prev" href="../../Hsmworks/AdaptClear/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -206,54 +206,27 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#loading-the-g-code">Loading the G-Code</a></li>
+        <li class="main active"><a href="#file-importing">File Importing</a></li>
         
-            <li><a href="#loading-from-a-local-file-on-disk">Loading from a local file on Disk</a></li>
-        
-            <li><a href="#recent-files">Recent Files</a></li>
-        
-            <li><a href="#loading-from-jscut">Loading from JSCut</a></li>
-        
-            <li><a href="#eagle-brd-load">Eagle BRD Load</a></li>
-        
-            <li><a href="#auto-levelling">Auto Levelling</a></li>
+            <li><a href="#solidworks">Solidworks</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="loading-the-g-code">Loading the G-Code</h1>
-<h2 id="loading-from-a-local-file-on-disk">Loading from a local file on Disk</h2>
-<p>In order to load a local G-Code file on disk, you basically just drag and drop the file on top of the browser window with Chillipepr In</p>
-<h2 id="recent-files">Recent Files</h2>
-<p>Chillipepr seems to cache the most recent files that have been dragged / dropped onto it.
-If you need to clear the cache for any reason the controls at the upper left can be used.
-These can also reset the G-Code to the default Chillipepr logo.</p>
-<p><a href="../../images/CNC/Loading-Setup/Loading1.png"><img src="../../images/CNC/Loading-Setup/Loading1.png" height="50%" width="50%" ></a> <br></p>
-<p><a href="../../images/CNC/Loading-Setup/Loading2.png"><img src="../../images/CNC/Loading-Setup/Loading2.png" height="50%" width="50%" ></a> <br></p>
-<h2 id="loading-from-jscut">Loading from JSCut</h2>
-<p>JSCut is an online CAM software for milling simple 2D profiles (i.e. inkscape diagrams similar to the laser cutter)</p>
+<h1 id="file-importing">File Importing</h1>
+<h2 id="solidworks">Solidworks</h2>
+<p>Based on this link</p>
 <ul>
-<li><a href="http://jscut.org/">http://jscut.org/</a></li>
+<li><a href="http://forum.freecadweb.org/viewtopic.php?t=9439">http://forum.freecadweb.org/viewtopic.php?t=9439</a></li>
 </ul>
-<p>From what I understand if JSCut is open at the same time as Chillipepr within the browser, it&rsquo;s possible to use this button to copy the G-Code across without having to export / import files.</p>
-<p><a href="../../images/CNC/Loading-Setup/JSCut1.png"><img src="../../images/CNC/Loading-Setup/JSCut1.png" height="50%" width="50%" ></a> <br></p>
-<h2 id="eagle-brd-load">Eagle BRD Load</h2>
-<p>Chillipepr also has support for converting Eagle board files into G-Code.
-Personally I&rsquo;d recommend using FlatCAM instead to load in a gerber file / export the G-Code as this can be used with any app that supports the gerber export format.</p>
-<p><a href="../../images/CNC/Loading-Setup/Eagle1.png"><img src="../../images/CNC/Loading-Setup/Eagle1.png" height="50%" width="50%" ></a> <br></p>
-<h2 id="auto-levelling">Auto Levelling</h2>
-<p>One of the main problems with milling PCB&rsquo;s is that the copper board tends not to be completely flat.
-So you end up ether milling too much and making a mess of the board, or not enough missing some parts of the board.</p>
-<p>One way around this is to use an inductive proximity sensor to take measurements of the copper board relative to the milling head.
-Typically, this is wired into Z-Min I think on the board. This can then be used as an offset to the milling profile to compensate for an uneven Copper board.</p>
-<p>It should be mentioned that other software such as FlatCAM also have these features inbuilt as well as double sided board support, although I have yet to try this out (since we don&rsquo;t have a sensor wired in just yet)</p>
-<p>I spotted this online tutorial here</p>
+<p>The best bet to transfer files from Solidworks to FreeCad is to</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=6WNE3E1ZZYY">https://www.youtube.com/watch?v=6WNE3E1ZZYY</a></li>
-</ul>
-<p><a href="../../images/CNC/Loading-Setup/AutoLevel1.png"><img src="../../images/CNC/Loading-Setup/AutoLevel1.png" height="50%" width="50%" ></a> <br></p></div>
+<li>Export the file under Solidworks using the STEP format</li>
+<li>Set the STEP sceme to AP214</li>
+<li>Set the IGES Export to B-Rep mode</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">

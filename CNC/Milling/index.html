@@ -104,6 +104,21 @@
             
             
                 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">FreeCAD <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../FreeCad/File-Import/">File Importing</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hsmworks <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
@@ -177,7 +192,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../Hsmworks/AdaptClear/">
+                    <a rel="prev" href="../../FreeCad/File-Import/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -193,13 +208,15 @@
     
         <li class="main active"><a href="#milling">Milling</a></li>
         
+            <li><a href="#zero-the-machine">Zero the Machine</a></li>
+        
             <li><a href="#set-the-feed-rate">Set the Feed Rate</a></li>
         
             <li><a href="#turn-on-the-spindle">Turn on the Spindle</a></li>
         
             <li><a href="#start-the-g-code">Start the G-Code</a></li>
         
-            <li><a href="#using-the-vacuum-cleaner">Using the Vacuum Cleaner</a></li>
+            <li><a href="#stopping-milling">Stopping Milling</a></li>
         
     
     </ul>
@@ -207,14 +224,65 @@
             <div class="col-md-9" role="main">
 
 <h1 id="milling">Milling</h1>
-<p>To start the milling process, it&rsquo;s fairly straight forward</p>
-<p>TODO</p>
+<p>All of the controls associated with the actual milling are located on the left hand side. <br>
+The emergency / immediate stop is also located on the right hand side</p>
+<p><a href="../../images/CNC/Milling/Milling1.png"><img src="../../images/CNC/Milling/Milling1.png" height="30%" width="30%" ></a>
+<a href="../../images/CNC/Milling/Milling5.png"><img src="../../images/CNC/Milling/Milling5.png" height="30%" width="30%" ></a> <br></p>
+<h2 id="zero-the-machine">Zero the Machine</h2>
+<p>One of the first steps is to get the head of the machine in the right place.
+It all depends on where you&rsquo;ve put the origin when using the CAM software, but generally placing the head at the lower left corner of where you will be milling is the best bet.
+Also you need to ether jog or manually adjust the Z Height so that the mill bit is just touching the surface of the material to be milled.</p>
+<p>One trick to figuring out when the mill bit is just touching the surface, is to turn on the spindle then jog the head down slowly untill you hear the noise of the material being grinded.</p>
+<p>Another suggestion is to move the head all the way to the lower bottom corner, then use the jog controls to move it to a known offset / position.
+This way if you need to stop a cut / come back to it at a later point in time (multiple passes) you can get the head to the same starting position later on.</p>
 <h2 id="set-the-feed-rate">Set the Feed Rate</h2>
+<p>Assuming you&rsquo;ve already loaded in the G-Code into Chillipepr (drag and drop the file onto the browser window) <br>
+The most important setting is the Feed Rate</p>
+<p><a href="../../images/CNC/Milling/Feedrate1.png"><img src="../../images/CNC/Milling/Feedrate1.png" height="50%" width="50%" ></a> <br></p>
+<p>If you&rsquo;ve already set the feedrate within the CAM software <br>
+(used to create the G-Code) then you can just leave this at <strong>1.00</strong> <br>
+This value is a multiplier so <strong>0.5</strong> = half speed.</p>
+<p>A speed which is too fast is really bad, as it can lead to:</p>
+<ul>
+<li>The milling bit becoming too stressed / breaking / bending</li>
+<li>The machine skipping steps leading to all sorts of problems with mis-alignments</li>
+</ul>
+<p>If you&rsquo;ve used hsmworks for example and left the feedrate at the default speed, then it will be about 10 x too fast for the mill.
+In that case 0.1 is a safe value. <br></p>
+<p>That being said it&rsquo;s generally better to make sure the feedrate is set correctly within the CAM software and to use a 1.0 value here if you can.
+The reason being is that the motion will be generally less jerky overall due to grbl not having to compensate.</p>
 <h2 id="turn-on-the-spindle">Turn on the Spindle</h2>
+<p>Next switch on the spindle to get ready to start milling</p>
+<p><a href="../../images/CNC/Milling/Spindle_Switch.jpg"><img src="../../images/CNC/Milling/Spindle_Switch.jpg" height="20%" width="20%" ></a> <br></p>
 <h2 id="start-the-g-code">Start the G-Code</h2>
-<h2 id="using-the-vacuum-cleaner">Using the Vacuum Cleaner</h2>
+<p>To start running the G-Code use the play button, make sure the spindle is running before you do this.</p>
+<p><a href="../../images/CNC/Milling/Milling2.png"><img src="../../images/CNC/Milling/Milling2.png" height="50%" width="50%" ></a> <br></p>
+<h3 id="using-the-vacuum-cleaner">Using the Vacuum Cleaner</h3>
 <p>While cutting we can use the henry hoover to suck up the mdf that&rsquo;s milled out to see what has been cut so far.</p>
-<p><a href="../../images/CNC/Milling/Hoover1.jpg"><img src="../../images/CNC/Milling/Hoover1.jpg" height="50%" width="50%" ></a> <br></p></div>
+<p><a href="../../images/CNC/Milling/Hoover1.jpg"><img src="../../images/CNC/Milling/Hoover1.jpg" height="50%" width="50%" ></a> <br></p>
+<h3 id="using-a-different-starting-point-optional">Using a different starting point (Optional)</h3>
+<p>One of the tricks Chillipepr allows us to do is to start from a line further down in the G-Code.
+If you click on one of the lines of the G-Code in the list</p>
+<ul>
+<li>This gives you an indication of where the CNC will be from an absolute position</li>
+<li>This allows you to set this as a new starting point when playing the G-Code</li>
+<li>We can get the head to move to this position / skip the G-Code above</li>
+</ul>
+<p><a href="../../images/CNC/Milling/StartPos1.png"><img src="../../images/CNC/Milling/StartPos1.png" height="50%" width="50%" ></a> <br></p>
+<h2 id="stopping-milling">Stopping Milling</h2>
+<p>There&rsquo;s a couple of different ways to stop the milling</p>
+<h3 id="disconnect-the-usb-lead">Disconnect the USB Lead</h3>
+<p>If you&rsquo;re really in a rush because something has horribly gone wrong, just disconnecting the USB lead is one sure way to stop everything.</p>
+<h3 id="stopping-the-queue">Stopping the Queue</h3>
+<p>The controls on the left do have a stop button.
+However, this only stops further messages being queued into the grbl firmware.
+If you use this the CNC will probably still continue on for a while longer while it gets to the end of its buffer stream</p>
+<p><a href="../../images/CNC/Milling/Milling3.png"><img src="../../images/CNC/Milling/Milling3.png" height="50%" width="50%" ></a> <br></p>
+<h3 id="immediate-stop">Immediate Stop</h3>
+<p>If you want to try and stop the machine immediately within Chillipepr then there&rsquo;s a 2nd stop button on the right hand side.
+These buttons send special commands to grbl to stop the G-Code right away (without waiting for the buffer to flush / complete).
+There&rsquo;s also a resume button next to it as well</p>
+<p><a href="../../images/CNC/Milling/Milling4.png"><img src="../../images/CNC/Milling/Milling4.png" height="50%" width="50%" ></a> <br></p></div>
         </div>
 
         <footer class="col-md-12">
