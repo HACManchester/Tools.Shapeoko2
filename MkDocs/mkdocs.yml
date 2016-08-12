@@ -8,6 +8,8 @@ pages:
     - Simulation: CNC/Simulation.md
     - Milling Material: CNC/Material.md
     - Milling: CNC/Milling.md
+- FreeCAD:
+    - File Importing: FreeCad/File-Import.md
 - Hsmworks:
     - Adaptive Clearing: Hsmworks/AdaptClear.md
     - Feed Rates: Hsmworks/FeedRates.md

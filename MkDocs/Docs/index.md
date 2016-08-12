@@ -18,5 +18,9 @@ Todo the following software needs to be looked into
   * **JSCut** - Open source CAM Software for generating G-Code for CNC Mills, limited to 2.5 CAM / 2 dimensional profiles similar to a laser cutter
   * **PyCAM** - Can handle STL Files and generate 3D Cam profiles, but seems not to be updated often
   * <http://wiki.linuxcnc.org/cgi-bin/wiki.pl?Cam>
+  * **Autodesk Fusion 360 CAM / Cad**
 
-The best free option may be Autodesk Fusion 360 CAM / Cad
+  * **FreeCad** - Path workspace
+  * http://www.freecadweb.org/wiki/index.php?title=Path_Workbench
+  * It looks like Freecad also has support for importing openscad files
+
