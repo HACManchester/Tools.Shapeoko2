@@ -19,7 +19,7 @@ Another suggestion is to move the head all the way to the lower bottom corner, t
 This way if you need to stop a cut / come back to it at a later point in time (multiple passes) you can get the head to the same starting position later on.
 
 
-## Set the Feed Rate
+## Set the Feed Rate Multiplier
 
 Assuming you've already loaded in the G-Code into Chillipepr (drag and drop the file onto the browser window) <br>
 The most important setting is the Feed Rate

@@ -7,12 +7,13 @@ pages:
     - Loading and Setup: CNC/Loading-Setup.md
     - Simulation: CNC/Simulation.md
     - Milling Material: CNC/Material.md
+    - Feed Rates: CNC/FeedRates.md
     - Milling: CNC/Milling.md
 - FreeCAD:
     - File Importing: FreeCad/File-Import.md
+    - Exporting GCode: FreeCad/Export-GCode.md
 - Hsmworks:
     - Adaptive Clearing: Hsmworks/AdaptClear.md
-    - Feed Rates: Hsmworks/FeedRates.md
     - Simulation: Hsmworks/Simulation.md
 - Maintenance:
     - Device Overview: Maintenance/Device-Overview.md
