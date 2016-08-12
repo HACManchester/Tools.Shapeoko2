@@ -42,6 +42,12 @@
     </url>
         
     <url>
+     <loc>None/CNC/FeedRates/</loc>
+     <lastmod>2016-08-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>None/CNC/Milling/</loc>
      <lastmod>2016-08-12</lastmod>
      <changefreq>daily</changefreq>
@@ -57,18 +63,18 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>None/FreeCad/Export-GCode/</loc>
+     <lastmod>2016-08-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
         
     <url>
      <loc>None/Hsmworks/AdaptClear/</loc>
-     <lastmod>2016-08-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/Hsmworks/FeedRates/</loc>
      <lastmod>2016-08-12</lastmod>
      <changefreq>daily</changefreq>
     </url>

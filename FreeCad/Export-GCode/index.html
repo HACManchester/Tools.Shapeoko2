@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Jogging / Moving the CNC - Hacman - Shapeoko 2</title>
+	<title>Exporting GCode - Hacman - Shapeoko 2</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -58,49 +58,49 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">CNC <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
 <li >
-    <a href="../Connecting/">Connecting - USB</a>
-</li>
-
-                    
-                        
-<li class="active">
-    <a href="./">Jogging / Moving the CNC</a>
+    <a href="../../CNC/Connecting/">Connecting - USB</a>
 </li>
 
                     
                         
 <li >
-    <a href="../Loading-Setup/">Loading and Setup</a>
+    <a href="../../CNC/Jog/">Jogging / Moving the CNC</a>
 </li>
 
                     
                         
 <li >
-    <a href="../Simulation/">Simulation</a>
+    <a href="../../CNC/Loading-Setup/">Loading and Setup</a>
 </li>
 
                     
                         
 <li >
-    <a href="../Material/">Milling Material</a>
+    <a href="../../CNC/Simulation/">Simulation</a>
 </li>
 
                     
                         
 <li >
-    <a href="../FeedRates/">Feed Rates</a>
+    <a href="../../CNC/Material/">Milling Material</a>
 </li>
 
                     
                         
 <li >
-    <a href="../Milling/">Milling</a>
+    <a href="../../CNC/FeedRates/">Feed Rates</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CNC/Milling/">Milling</a>
 </li>
 
                     
@@ -109,19 +109,19 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">FreeCAD <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         
 <li >
-    <a href="../../FreeCad/File-Import/">File Importing</a>
+    <a href="../File-Import/">File Importing</a>
 </li>
 
                     
                         
-<li >
-    <a href="../../FreeCad/Export-GCode/">Exporting GCode</a>
+<li class="active">
+    <a href="./">Exporting GCode</a>
 </li>
 
                     
@@ -193,12 +193,12 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="next" href="../Connecting/">
+                    <a rel="next" href="../File-Import/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../Loading-Setup/">
+                    <a rel="prev" href="../../Hsmworks/AdaptClear/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -212,49 +212,51 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#jogging-the-cnc">Jogging the CNC</a></li>
+        <li class="main active"><a href="#freecad-exporting-g-code">FreeCAD - Exporting G-Code</a></li>
         
-            <li><a href="#overview">Overview</a></li>
+            <li><a href="#export-of-g-code-method-1">Export of G-Code Method 1</a></li>
         
-            <li><a href="#moving-in-increments">Moving in Increments</a></li>
-        
-            <li><a href="#zeroing-the-machine">Zeroing the machine</a></li>
+            <li><a href="#export-of-g-code-method-2">Export of G-Code Method 2</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="jogging-the-cnc">Jogging the CNC</h1>
-<h2 id="overview">Overview</h2>
-<p>One of the first things to learn how to do is to jog the device using the controls at the upper right hand corner. <br>
-You may need to use the arrow button to expand the tab out to see all the controls.</p>
-<p><a href="../../images/CNC/Jog/Jog1.png"><img src="../../images/CNC/Jog/Jog1.png" height="50%" width="50%" ></a> <br></p>
-<h2 id="moving-in-increments">Moving in Increments</h2>
-<p>It&rsquo;s possible to move the head of the mill in small increments by using the following buttons.</p>
-<p><a href="../../images/CNC/Jog/Jog2.png"><img src="../../images/CNC/Jog/Jog2.png" height="50%" width="50%" ></a> <br></p>
-<p>By default, the amount to move should be in mm, it&rsquo;s possible to set larger or smaller values to move using the buttons underneath.
-To use a value larger than 1 just use the custom drop down.</p>
-<p><a href="../../images/CNC/Jog/Jog3.png"><img src="../../images/CNC/Jog/Jog3.png" height="50%" width="50%" ></a> <br></p>
-<p><strong>Note</strong> be careful not to crash the head onto the spoiler plate or side of the machine when moving around.</p>
-<h2 id="zeroing-the-machine">Zeroing the machine</h2>
-<h3 id="zero-point">Zero point</h3>
-<p>CNC&rsquo;s tend to have a concept of a zero point. The zero point is the reference to which all other move operations occur.
-This zero point can be anywhere</p>
-<ul>
-<li>Usually you set the zero point to the bottom left corner of where you will be milling from.</li>
-<li>Also it&rsquo;s best to set the Z Axis (height of the mill bit above the material) so that it&rsquo;s just touching the top of the material that&rsquo;s going to be milled.</li>
-<li>One trick to getting the Z Height right is to turn the spindle on, and to jog the machine down slightly until you start to hear it grind against the wood.</li>
-</ul>
-<p>Once the head is in the right place you can then use the <strong>Zero Out</strong> button to tell the grbl firmware that this is the new starting point.</p>
-<p><a href="../../images/CNC/Jog/Jog4.png"><img src="../../images/CNC/Jog/Jog4.png" ></a> <br></p>
-<p>The <em>Go To Zero</em> button should be used carefully, this will cause the cnc head to move back to the zero point if it&rsquo;s currently in some other location.
-If the zero point isn&rsquo;t set right then you might cause the head to crash into the milling material.</p>
-<h3 id="homing-the-machine">Homing the machine</h3>
-<p>We currently don&rsquo;t have any homing switches on the Shapeoko at the moment.
-One way around this is to power down the steppers, then manually move the head to the bottom left hand corner.</p>
-<p>Grbl doesn&rsquo;t have a way of forcing the steppers on / off, we currently have the settings within the firmware set to power down the steppers 0.1 seconds after the machine enters into a hold. <br>
-This way we have the option of manually moving the mill when it&rsquo;s not running g-code</p></div>
+<h1 id="freecad-exporting-g-code">FreeCAD - Exporting G-Code</h1>
+<h2 id="export-of-g-code-method-1">Export of G-Code Method 1</h2>
+<p>The first way to generate the G-Code is just to use File -&gt; Export within the Path Workspace</p>
+<h3 id="select-path-project">Select Path Project</h3>
+<p>First select the Path Project within the FreeCad Part</p>
+<p><a href="../../images/FreeCad/Export-GCode/SelectProject.png"><img src="../../images/FreeCad/Export-GCode/SelectProject.png" height="30%" width="30%" ></a> <br></p>
+<h3 id="select-file-export">Select File Export</h3>
+<p>Next Select File -&gt; Export from the menu</p>
+<p><a href="../../images/FreeCad/Export-GCode/FileExport.png"><img src="../../images/FreeCad/Export-GCode/FileExport.png" height="30%" width="30%" ></a> <br></p>
+<h3 id="select-g-code-for-export">Select G-Code for Export</h3>
+<p>Make sure to select <strong>G-Code</strong> in the drop down box for the file save prompt <br>
+and choose a save destination.</p>
+<p><a href="../../images/FreeCad/Export-GCode/FileSave1.png"><img src="../../images/FreeCad/Export-GCode/FileSave1.png" height="50%" width="50%" ></a> <br></p>
+<h3 id="choose-the-post-processor">Choose the Post Processor</h3>
+<p>Next we need to choose a file pre-processor, some devices need a bit of special formatting for the G-Code.
+The pre-processor typically handles this for different devices, with FreeCAD this is typically a python script <br>
+I believe selecting <strong>linuxcnc_post</strong> should be good enough for grbl (TODO this needs to be tested)</p>
+<p><a href="../../images/FreeCad/Export-GCode/PostProc1.png"><img src="../../images/FreeCad/Export-GCode/PostProc1.png" height="30%" width="30%" ></a> <br></p>
+<h3 id="g-code-preview">G-Code Preview</h3>
+<p>Finally, we should get a preview of the G-Code in a window before it saves it</p>
+<p><a href="../../images/FreeCad/Export-GCode/GCode-Preview.png"><img src="../../images/FreeCad/Export-GCode/GCode-Preview.png" height="40%" width="40%" ></a> <br></p>
+<h2 id="export-of-g-code-method-2">Export of G-Code Method 2</h2>
+<p>Another way to export the G-Code is to setup the project with a predefined file path and pre-processor so you don&rsquo;t have to keep clicking lots of buttons each time etc.</p>
+<h3 id="set-the-output-file-path">Set the Output File Path</h3>
+<p>First select the project <br>
+In the bottom window underneath there should be a field called Output File, this can be used to set the output path for the generated G-Code</p>
+<p><a href="../../images/FreeCad/Export-GCode/SelectProject2.png"><img src="../../images/FreeCad/Export-GCode/SelectProject2.png" height="30%" width="30%" ></a> <br></p>
+<h3 id="set-the-pre-processor">Set the Pre-processor</h3>
+<p>By selecting the Machine node under the Path Project it should be possible to select the pre-processor here</p>
+<p><a href="../../images/FreeCad/Export-GCode/PostProc2.png"><img src="../../images/FreeCad/Export-GCode/PostProc2.png" height="30%" width="30%" ></a> <br></p>
+<p>TODO this doesn&rsquo;t seem to work under Windows, I think this is a bug that causes this only to work under Linux at the moment</p>
+<h3 id="click-the-post-process-button">Click the Post Process Button</h3>
+<p>Finally, we can click the post process button on the toolbar to get a preview / save the part / generate the G-Code</p>
+<p><a href="../../images/FreeCad/Export-GCode/PostProc3.png"><img src="../../images/FreeCad/Export-GCode/PostProc3.png" height="50%" width="50%" ></a> <br></p></div>
         </div>
 
         <footer class="col-md-12">
