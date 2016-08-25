@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-08-12</lastmod>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//</loc>
+     <lastmod>2016-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,44 +12,14 @@
     
         
     <url>
-     <loc>None/CNC/Connecting/</loc>
-     <lastmod>2016-08-12</lastmod>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//FreeCad/File-Import/</loc>
+     <lastmod>2016-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/CNC/Jog/</loc>
-     <lastmod>2016-08-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/CNC/Loading-Setup/</loc>
-     <lastmod>2016-08-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/CNC/Simulation/</loc>
-     <lastmod>2016-08-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/CNC/Material/</loc>
-     <lastmod>2016-08-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/CNC/FeedRates/</loc>
-     <lastmod>2016-08-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/CNC/Milling/</loc>
-     <lastmod>2016-08-12</lastmod>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//FreeCad/Export-GCode/</loc>
+     <lastmod>2016-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -58,30 +28,14 @@
     
         
     <url>
-     <loc>None/FreeCad/File-Import/</loc>
-     <lastmod>2016-08-12</lastmod>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Hsmworks/AdaptClear/</loc>
+     <lastmod>2016-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/FreeCad/Export-GCode/</loc>
-     <lastmod>2016-08-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>None/Hsmworks/AdaptClear/</loc>
-     <lastmod>2016-08-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/Hsmworks/Simulation/</loc>
-     <lastmod>2016-08-12</lastmod>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Hsmworks/Simulation/</loc>
+     <lastmod>2016-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -90,26 +44,72 @@
     
         
     <url>
-     <loc>None/Maintenance/Device-Overview/</loc>
-     <lastmod>2016-08-12</lastmod>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Milling/Connecting/</loc>
+     <lastmod>2016-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/Maintenance/Updating-Firmware/</loc>
-     <lastmod>2016-08-12</lastmod>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Milling/Jog/</loc>
+     <lastmod>2016-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/Maintenance/Grbl-Settings/</loc>
-     <lastmod>2016-08-12</lastmod>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Milling/Loading-Setup/</loc>
+     <lastmod>2016-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/Maintenance/Todo/</loc>
-     <lastmod>2016-08-12</lastmod>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Milling/Simulation/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Milling/Material/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Milling/FeedRates/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Milling/Milling/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Maintenance/Device-Overview/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Maintenance/Updating-Firmware/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Maintenance/Grbl-Settings/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://hacmanchester.github.io/Tools.Shapeoko2//Maintenance/Todo/</loc>
+     <lastmod>2016-08-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
