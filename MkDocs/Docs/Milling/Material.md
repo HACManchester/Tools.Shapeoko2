@@ -7,28 +7,39 @@ It has several inserts in the bottom for securing additional material on top usi
 
 Some of the holes should line up with the holes on the small drill press vice
 
-<a href="../../images/CNC/Material/InsertHoles.jpg"><img src="../../images/CNC/Material/InsertHoles.jpg" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Material/InsertHoles.jpg"><img src="../../images/Milling/Material/InsertHoles.jpg" height="50%" width="50%" ></a> <br>
 
-<a href="../../images/CNC/Material/FittedBolts.jpg"><img src="../../images/CNC/Material/FittedBolts.jpg" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Material/FittedBolts.jpg"><img src="../../images/Milling/Material/FittedBolts.jpg" height="50%" width="50%" ></a> <br>
 
 
 ### Position of Clamping Holes
 
 In order to drill the positioning holes for the material being milled (that sits on top of the spoiler board)
-First move the CNC head all the way to the bottom left, then use the Jog within Chillipepr to get it into the right offset.
+First line the head up with the bottom left hole.
 
-From the Bottom Left Corner
+The first bottom left hole should be at a position of **30mm Up, 0mm Right**.
+But I've found that trying to using the bottom left corner of the machine is unreliable and that it's better to align with the first hole instead.
 
-  * 30mm Upwards, 0mm Right
-  * 30mm Upwards, 300mm Right
-  * 290mm Upwards, 0mm Right
-  * 290mm Upwards, 300mm Right
+The following are offset positions from the first hole
 
-Drill mount holes
+#### Plate fixing points
 
-  * 30mm Upwards, 0mm Right
-  * 30mm Upwards, 110mm Right
-  * 140mm Upwards, 0mm Right
+| Y (back to front) | X (left to right) |
+| ----------------- | ----------------- |
+| 0 mm   | 0 mm   |
+| 0 mm   | 300 mm |
+| 260 mm | 0 mm   |
+| 260 mm | 300 mm |
+
+#### Drill mount holes
+
+| Y (back to front) | X (left to right) |
+| ----------------- | ----------------- |
+| 0 mm   | 0 mm   |
+| 0 mm   | 110 mm |
+| 110 mm | 0 mm |
+
+**TODO add additional hole on the rights to avoid belt holder conflict**
 
 ## MDF
 

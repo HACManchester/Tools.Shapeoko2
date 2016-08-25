@@ -24,7 +24,7 @@ There's currently two main's plugs that need to be plugged in
 You may need to switch on the electronics bench, as we've got the bench it's on temporarily hooked up to that at the moment.
 Connect the USB plug into your laptop.
 
-<a href="../../images/CNC/Connecting/PSU_Connection.jpg"><img src="../../images/CNC/Connecting/PSU_Connection.jpg" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Connecting/PSU_Connection.jpg"><img src="../../images/Milling/Connecting/PSU_Connection.jpg" height="50%" width="50%" ></a> <br>
 
 
 ## Controls
@@ -32,9 +32,10 @@ Connect the USB plug into your laptop.
 ### Spindle Power
 
 The switch on the front of the box controls the spindle on / off <br>
-The speed of the spindle is fixed at the moment; I think the spindle is 24V but we're currently using a 12V Power Supply so the speed is only half of maximum.
+The speed of the spindle is fixed at the moment; I think the spindle is 48V but we're currently using a 12V Power Supply so the speed is only quarter of maximum. <br>
+Note this switch only controls the power to the spindle, not the grbl shield or the arduino, they are powered by a seperate supply not controlled by this switch
 
-<a href="../../images/CNC/Connecting/Spindle_Switch.jpg"><img src="../../images/CNC/Connecting/Spindle_Switch.jpg" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Connecting/Spindle_Switch.jpg"><img src="../../images/Milling/Connecting/Spindle_Switch.jpg" height="50%" width="50%" ></a> <br>
 
 
 ## Starting Chillipepr
@@ -51,7 +52,7 @@ The JavaScript within Chillipepr will connect to a Serial Port Json Server ether
 I've discovered that it's best to run Chillipepr and the serial server on the same machine to avoid problems with latency.
 We're using the Grbl version of Chillipepr here as the firmware for the shapeoko2 is the latest version of Grbl.
 
-<a href="../../images/CNC/Connecting/Chillipepr-Example1.png"><img src="../../images/CNC/Connecting/Chillipepr-Example1.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Connecting/Chillipepr-Example1.png"><img src="../../images/Milling/Connecting/Chillipepr-Example1.png" height="50%" width="50%" ></a> <br>
 
 ## Starting the Serial Port Json Server
 
@@ -65,7 +66,7 @@ and Chillipepr.
 You can find the download links in the bottom right hand corner of the Chillipepr window.
 Sometimes you need to press the up / down arrow to expand the tab to see it, then scroll down.
 
-<a href="../../images/CNC/Connecting/SerialProxyDownload1.png"><img src="../../images/CNC/Connecting/SerialProxyDownload1.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Connecting/SerialProxyDownload1.png"><img src="../../images/Milling/Connecting/SerialProxyDownload1.png" height="50%" width="50%" ></a> <br>
 
 There should be different versions listed for different operating systems.
 
@@ -75,7 +76,7 @@ There should be different versions listed for different operating systems.
 First plug in the USB plug from the mill.
 Then run the serial port json server, it should pick up on the new serial port and list it in a console window
 
-<a href="../../images/CNC/Connecting/SerialConsole.png"><img src="../../images/CNC/Connecting/SerialConsole.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Connecting/SerialConsole.png"><img src="../../images/Milling/Connecting/SerialConsole.png" height="50%" width="50%" ></a> <br>
 
 
 ## Connecting Chillipepr to the Serial Proxy
@@ -83,11 +84,11 @@ Then run the serial port json server, it should pick up on the new serial port a
 Next we should be ready to now link / connect Chillipepr to the serial server. <br>
 Select **Connect to Host**
 
-<a href="../../images/CNC/Connecting/Connect1.png"><img src="../../images/CNC/Connecting/Connect1.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Connecting/Connect1.png"><img src="../../images/Milling/Connecting/Connect1.png" height="50%" width="50%" ></a> <br>
 
 Select **Connect to Localhost**
 
-<a href="../../images/CNC/Connecting/Connect2.png"><img src="../../images/CNC/Connecting/Connect2.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Connecting/Connect2.png"><img src="../../images/Milling/Connecting/Connect2.png" height="50%" width="50%" ></a> <br>
 
 We should now see a list of the devices detected in the bottom right corner.
 
@@ -96,7 +97,7 @@ The older versions of Grbl used to use a slower baud rate of around 9600, but th
 
 Once you've selected Grbl in the drop down, click the tick box on the left to initiate the connection to the board.
 
-<a href="../../images/CNC/Connecting/Connect3.png"><img src="../../images/CNC/Connecting/Connect3.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Connecting/Connect3.png"><img src="../../images/Milling/Connecting/Connect3.png" height="50%" width="50%" ></a> <br>
 
 
 ## Connecting via Putty

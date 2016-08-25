@@ -26,3 +26,8 @@ Currently we don't have a way of homing the machine (except for manualy)
 ## E-Stop Button
 
 One idea might be an E-Stop button, although at the moment one way to stop the mill is just to yank out the USB plug while its running.
+
+## Mounting holes
+
+I need to add a couple of mounting holes further to the left, the ones on the far right are currently coming into conflict with the belt holder
+along the X axis on the far right

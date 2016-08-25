@@ -1,20 +1,24 @@
 site_name: Hacman - Shapeoko 2
+site_url: http://hacmanchester.github.io/Tools.Shapeoko2/
+site_description: Hacman - Shapeoko 2
+repo_url: https://github.com/HACManchester/Tools.Shapeoko2/
+
 pages:
 - Home: index.md
-- CNC:
-    - Connecting - USB: CNC/Connecting.md
-    - Jogging / Moving the CNC: CNC/Jog.md
-    - Loading and Setup: CNC/Loading-Setup.md
-    - Simulation: CNC/Simulation.md
-    - Milling Material: CNC/Material.md
-    - Feed Rates: CNC/FeedRates.md
-    - Milling: CNC/Milling.md
 - FreeCAD:
     - File Importing: FreeCad/File-Import.md
     - Exporting GCode: FreeCad/Export-GCode.md
 - Hsmworks:
     - Adaptive Clearing: Hsmworks/AdaptClear.md
     - Simulation: Hsmworks/Simulation.md
+- Milling:
+    - Connecting - USB: Milling/Connecting.md
+    - Jogging / Moving the CNC: Milling/Jog.md
+    - Loading and Setup: Milling/Loading-Setup.md
+    - Simulation: Milling/Simulation.md
+    - Milling Material: Milling/Material.md
+    - Feed Rates: Milling/FeedRates.md
+    - Milling: Milling/Milling.md
 - Maintenance:
     - Device Overview: Maintenance/Device-Overview.md
     - Updating the Firmware: Maintenance/Updating-Firmware.md

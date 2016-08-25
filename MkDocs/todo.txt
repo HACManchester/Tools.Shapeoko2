@@ -1,0 +1,11 @@
+to convert openscad files to solidworks
+
+1. save openscad file as csg format
+2. open file in free cad
+3. save as step file
+4. open step file in soldiworks
+
+5. need to test the shape recognition bit as well
+http://forums.reprap.org/read.php?1,220486
+
+change the milling hole positions to an offst from the first hole

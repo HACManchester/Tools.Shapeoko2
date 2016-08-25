@@ -11,9 +11,9 @@ Chillipepr seems to cache the most recent files that have been dragged / dropped
 If you need to clear the cache for any reason the controls at the upper left can be used.
 These can also reset the G-Code to the default Chillipepr logo.
 
-<a href="../../images/CNC/Loading-Setup/Loading1.png"><img src="../../images/CNC/Loading-Setup/Loading1.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Loading-Setup/Loading1.png"><img src="../../images/Milling/Loading-Setup/Loading1.png" height="50%" width="50%" ></a> <br>
 
-<a href="../../images/CNC/Loading-Setup/Loading2.png"><img src="../../images/CNC/Loading-Setup/Loading2.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Loading-Setup/Loading2.png"><img src="../../images/Milling/Loading-Setup/Loading2.png" height="50%" width="50%" ></a> <br>
 
 
 ## Loading from JSCut
@@ -24,7 +24,7 @@ JSCut is an online CAM software for milling simple 2D profiles (i.e. inkscape di
 
 From what I understand if JSCut is open at the same time as Chillipepr within the browser, it's possible to use this button to copy the G-Code across without having to export / import files.
 
-<a href="../../images/CNC/Loading-Setup/JSCut1.png"><img src="../../images/CNC/Loading-Setup/JSCut1.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Loading-Setup/JSCut1.png"><img src="../../images/Milling/Loading-Setup/JSCut1.png" height="50%" width="50%" ></a> <br>
 
 
 ## Eagle BRD Load
@@ -32,7 +32,7 @@ From what I understand if JSCut is open at the same time as Chillipepr within th
 Chillipepr also has support for converting Eagle board files into G-Code.
 Personally I'd recommend using FlatCAM instead to load in a gerber file / export the G-Code as this can be used with any app that supports the gerber export format.
 
-<a href="../../images/CNC/Loading-Setup/Eagle1.png"><img src="../../images/CNC/Loading-Setup/Eagle1.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Loading-Setup/Eagle1.png"><img src="../../images/Milling/Loading-Setup/Eagle1.png" height="50%" width="50%" ></a> <br>
 
 
 ## Auto Levelling
@@ -49,5 +49,5 @@ I spotted this online tutorial here
 
   * <https://www.youtube.com/watch?v=6WNE3E1ZZYY>
 
-<a href="../../images/CNC/Loading-Setup/AutoLevel1.png"><img src="../../images/CNC/Loading-Setup/AutoLevel1.png" height="50%" width="50%" ></a> <br>
+<a href="../../images/Milling/Loading-Setup/AutoLevel1.png"><img src="../../images/Milling/Loading-Setup/AutoLevel1.png" height="50%" width="50%" ></a> <br>
 
