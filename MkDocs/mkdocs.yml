@@ -1,7 +1,8 @@
 site_name: Hacman - Shapeoko 2
 site_url: http://hacmanchester.github.io/Tools.Shapeoko2/
-site_description: Hacman - Shapeoko 2
 repo_url: https://github.com/HACManchester/Tools.Shapeoko2/
+site_description: Hacman - Shapeoko 2
+edit_uri: edit/master/MkDocs/Docs
 
 pages:
 - Home: index.md
@@ -30,9 +31,13 @@ theme: cosmo
 #theme: readthedocs
 #theme: mkdocs
 
+# Overrides content within the selected theme
+theme_dir: theme
+
 markdown_extensions:
     - smarty
 
 extra_css:
     - css/highlight-fix.css
     - css/highlight-custom.css
+    - css/navbarfix.css

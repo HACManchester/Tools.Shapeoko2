@@ -22,3 +22,8 @@ cause the browser to auto refresh the site as it's being viewed.
   * Install python
   * pip install mkdocs
   * for the different themes - mkdocs-bootswatch, mkdocs-bootstrap, mkdocs-alabaster
+
+## Theme
+
+The default bootstrap theme lacks the Edit button so I've added this in via the theme directory
+also the width has been altered for the navbar / wider viewing
